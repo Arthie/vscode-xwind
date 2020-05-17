@@ -1,0 +1,65 @@
+{
+  "name": "vscode-tailwindcssinjs",
+  "version": "0.1.0",
+  "publisher": "Arthie",
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "author": "Arthie",
+  "license": "MIT",
+  "displayName": "Tailwindcssinjs",
+  "description": "Vscode extension for @tailwindcssinjs/macro",
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "babel-macros",
+    "css-in-js",
+    "css",
+    "tailwind-ui",
+    "tailwind-plugins",
+    "babel-macro",
+    "emotion",
+    "babel",
+    "autocomplete",
+    "intellisense"
+  ],
+  "preview": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arthie/tailwindcssinjs"
+  },
+  "bugs": {
+    "url": "https://github.com/Arthie/tailwindcssinjs/issues"
+  },
+  "main": "./lib/extension",
+  "contributes": {
+    "typescriptServerPlugins": [
+      {
+        "name": "@tailwindcssinjs/typescript-plugin",
+        "enableForWorkspaceTypeScriptVersions": false
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "qna": "https://github.com/Arthie/tailwindcssinjs/issues",
+  "dependencies": {
+    "@tailwindcssinjs/typescript-plugin": "0.1.0",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "@types/vscode": "1.44.0"
+  },
+  "icon": "icon.png",
+  "scripts": {
+    "build": "tsc --build"
+  }
+}
