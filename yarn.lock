@@ -29,10 +29,10 @@
     postcss-js "^2.0.3"
     timsort "^0.3.0"
 
-"@tailwindcssinjs/typescript-plugin@*":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/typescript-plugin/-/typescript-plugin-0.1.0.tgz#329b5b169c03145387d64bb29a5419c56f528cc0"
-  integrity sha512-/gAn2Z1CGglrarAAD/l4smriuH/hCO40wgMCyB9FyNNOUa/DwFwZ68po27l6lIRTxKaXJ6gaLvVGwOp+qyldwQ==
+"@tailwindcssinjs/typescript-plugin@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/typescript-plugin/-/typescript-plugin-0.1.1.tgz#8edc73d3b98997066eddf0ff9f65a07adafd2e3a"
+  integrity sha512-GPVLEumqJnSFPqiHvIIL+Qe0Lnx51MuVuY9NGHbFyd2hTtTmdIOVYUtP/OkLfZRczfyx2cu/7AmwNZijy73NOA==
   dependencies:
     "@tailwindcssinjs/tailwindcss-data" "0.7.0"
     "@tailwindcssinjs/transformers" "0.7.0"
