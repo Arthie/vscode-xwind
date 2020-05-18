@@ -5,7 +5,7 @@ import {
 } from "./getTailwindcssinjsTag";
 
 const TYPESCRIPT_EXTENSION_ID = "vscode.typescript-language-features";
-const PLUGIN_ID = "@tailwindcssinjs/typescript-plugin";
+const PLUGIN_ID = "typescript-tailwindcssinjs-plugin";
 const SELECTORS = [
   { language: "javascript", scheme: "file" },
   { language: "javascript", scheme: "untitled" },

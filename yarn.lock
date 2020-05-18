@@ -10,6 +10,13 @@
     postcss "7.0.28"
     purgecss "^2.2.0"
 
+"@tailwindcssinjs/class-composer@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/class-composer/-/class-composer-0.5.1.tgz#3913720037b2f3d5e09d9faef65a73399c248c73"
+  integrity sha512-1v+9XsaxXy/Rv9Xk6wSKX2cvraDPN7beF4PASbI6IHrkncLopLwoWikelnTfMbptJd6Vd8caE8l6bOGR/yrcOQ==
+  dependencies:
+    core-js "^3.6.5"
+
 "@tailwindcssinjs/tailwindcss-data@0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@tailwindcssinjs/tailwindcss-data/-/tailwindcss-data-0.7.0.tgz#1dd82449febe893fab4f5befff3a2967b7323250"
@@ -28,18 +35,6 @@
     postcss "^7.0.30"
     postcss-js "^2.0.3"
     timsort "^0.3.0"
-
-"@tailwindcssinjs/typescript-plugin@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/typescript-plugin/-/typescript-plugin-0.1.1.tgz#8edc73d3b98997066eddf0ff9f65a07adafd2e3a"
-  integrity sha512-GPVLEumqJnSFPqiHvIIL+Qe0Lnx51MuVuY9NGHbFyd2hTtTmdIOVYUtP/OkLfZRczfyx2cu/7AmwNZijy73NOA==
-  dependencies:
-    "@tailwindcssinjs/tailwindcss-data" "0.7.0"
-    "@tailwindcssinjs/transformers" "0.7.0"
-    core-js "^3.6.5"
-    import-fresh "^3.2.1"
-    typescript-template-language-service-decorator "^2.2.0"
-    vscode-languageserver-types "^3.15.1"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -625,10 +620,28 @@ timsort@^0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
+typescript-tailwindcssinjs-plugin@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/typescript-tailwindcssinjs-plugin/-/typescript-tailwindcssinjs-plugin-0.1.1.tgz#226ddca50f4cf989a86b5553e4dbb1d614c791bb"
+  integrity sha512-HVQI+leuuhnf1qfB6q+C/ncMZQlWoojjuVp7OAw1ZBSMsaSraqDdJPebW+3SGlo2wCYsmA0PE7l5o5lIlxdSCw==
+  dependencies:
+    "@tailwindcssinjs/class-composer" "^0.5.1"
+    "@tailwindcssinjs/tailwindcss-data" "0.7.0"
+    "@tailwindcssinjs/transformers" "0.7.0"
+    core-js "^3.6.5"
+    import-fresh "^3.2.1"
+    typescript-template-language-service-decorator "^2.2.0"
+    vscode-languageserver-types "^3.15.1"
+
 typescript-template-language-service-decorator@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/typescript-template-language-service-decorator/-/typescript-template-language-service-decorator-2.2.0.tgz#4ee6d580f307fb9239978e69626f2775b8a59b2a"
   integrity sha512-xiolqt1i7e22rpqMaprPgSFVgU64u3b9n6EJlAaUYE61jumipKAdI1+O5khPlWslpTUj80YzjUKjJ2jxT0D74w==
+
+typescript@^3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.2.tgz#64e9c8e9be6ea583c54607677dd4680a1cf35db9"
+  integrity sha512-q2ktq4n/uLuNNShyayit+DTobV2ApPEo/6so68JaD5ojvc/6GClBipedB9zNWYxRSAlZXAe405Rlijzl6qDiSw==
 
 uniq@^1.0.1:
   version "1.0.1"

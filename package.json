@@ -39,8 +39,8 @@
   "contributes": {
     "typescriptServerPlugins": [
       {
-        "name": "@tailwindcssinjs/typescript-plugin",
-        "enableForWorkspaceTypeScriptVersions": false
+        "name": "typescript-tailwindcssinjs-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
       }
     ]
   },
@@ -52,8 +52,9 @@
   ],
   "qna": "https://github.com/Arthie/tailwindcssinjs/issues",
   "dependencies": {
-    "@tailwindcssinjs/typescript-plugin": "0.1.1",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "typescript": "^3.9.2",
+    "typescript-tailwindcssinjs-plugin": "^0.1.0"
   },
   "devDependencies": {
     "@types/vscode": "1.44.0"
