@@ -53,8 +53,8 @@
   "qna": "https://github.com/Arthie/tailwindcssinjs/issues",
   "dependencies": {
     "tailwindcss": "^1.4.6",
-    "typescript": "^3.9.2",
-    "typescript-tailwindcssinjs-plugin": "^0.1.0"
+    "typescript": "^3.9.3",
+    "typescript-tailwindcssinjs-plugin": "^0.2.2"
   },
   "devDependencies": {
     "@types/vscode": "1.44.0"
