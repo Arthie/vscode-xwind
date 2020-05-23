@@ -30,10 +30,10 @@
   "preview": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Arthie/tailwindcssinjs"
+    "url": "https://github.com/Arthie/vscode-tailwindcssinjs"
   },
   "bugs": {
-    "url": "https://github.com/Arthie/tailwindcssinjs/issues"
+    "url": "https://github.com/Arthie/vscode-tailwindcssinjs/issues"
   },
   "main": "./lib/extension",
   "contributes": {
@@ -50,7 +50,7 @@
     "onLanguage:javascriptreact",
     "onLanguage:typescriptreact"
   ],
-  "qna": "https://github.com/Arthie/tailwindcssinjs/issues",
+  "qna": "https://github.com/Arthie/vscode-tailwindcssinjs/issues",
   "dependencies": {
     "tailwindcss": "^1.4.6",
     "typescript": "^3.9.3",
