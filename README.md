@@ -26,4 +26,18 @@ It also works with other solutions that use the tw tagged template but issues sp
 
 ## Demo
 
-WIP
+### Autocomplete
+
+![autocomplete](resources/autocomplete.gif)
+
+### CSS hover preview
+
+![hover](resources/hover.gif)
+
+### Errors
+
+![error](resources/error.gif)
+
+### Reacting to tailwind.config.js changes
+
+![react](resources/react.gif)
