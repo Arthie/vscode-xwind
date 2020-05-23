@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="564" height="238" src="resources/header.png" alt="tailwindcssinjs">
+  <img width="564" height="238" src="https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/header.png" alt="tailwindcssinjs">
 </p>
 
 # vscode-tailwindcssinjs
@@ -24,20 +24,24 @@ It also works with other solutions that use the tw tagged template but issues sp
 - **No class mismatch** it uses your project's installed version of tailwind
 - **Zero config** this extension has no configuration
 
+## Installation
+
+[Go to vscode extensions marketplace](https://marketplace.visualstudio.com/items?itemName=Arthie.vscode-tailwindcssinjs)
+
 ## Demo
 
 ### Autocomplete
 
-![autocomplete](resources/autocomplete.gif)
+![autocomplete](https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/autocomplete.gif)
 
 ### CSS hover preview
 
-![hover](resources/hover.gif)
+![hover](https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/hover.gif)
 
 ### Errors
 
-![error](resources/error.gif)
+![error](https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/error.gif)
 
 ### Reacting to tailwind.config.js changes
 
-![react](resources/react.gif)
+![react](https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/react.gif)
