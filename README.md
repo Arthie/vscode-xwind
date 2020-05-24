@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="564" height="238" src="https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/header.png" alt="tailwindcssinjs">
+  <img width="376" height="157" src="https://github.com/Arthie/vscode-tailwindcssinjs/raw/master/resources/header.png" alt="tailwindcssinjs">
 </p>
 
 # vscode-tailwindcssinjs
