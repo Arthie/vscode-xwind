@@ -74,10 +74,10 @@ export async function activate(context: vscode.ExtensionContext) {
     vscode.languages.registerCompletionItemProvider(
       SELECTORS,
       tailwindcssinjsCompletionProvider,
-      "`",
       " ",
       "[",
-      ":"
+      ":",
+      "\n"
     )
   );
 }
