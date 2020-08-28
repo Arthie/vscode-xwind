@@ -1,6 +1,6 @@
 {
   "name": "vscode-tailwindcssinjs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "Arthie",
   "engines": {
     "vscode": "^1.44.0"
@@ -52,9 +52,9 @@
   ],
   "qna": "https://github.com/Arthie/vscode-tailwindcssinjs/issues",
   "dependencies": {
-    "tailwindcss": "^1.7.0",
+    "tailwindcss": "^1.7.6",
     "typescript": "^3.9.7",
-    "typescript-tailwindcssinjs-plugin": "^0.2.4"
+    "typescript-tailwindcssinjs-plugin": "^0.3.1"
   },
   "devDependencies": {
     "@types/vscode": "1.44.0"

@@ -10,27 +10,21 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@tailwindcssinjs/class-composer@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/class-composer/-/class-composer-0.8.0.tgz#4367618c1e5d3a4fe2dfbb4f3708105ed90d6250"
-  integrity sha512-IKbXSJzB+oMlFKI2ei8eMFmsYsRM3KM2kK9nt5tzO/TL2NhtN58BaPesyLkbUl1ZXqw20fg7P6dHfwI+Ss/VMg==
+"@tailwindcssinjs/class-composer@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/class-composer/-/class-composer-0.9.0.tgz#f4c44a58a18f6e9689a40446a14b524702c3851a"
+  integrity sha512-MFxrOR+/ndJ4hDkIdi5LjUT+ffyxJcdppdLi+JHUddgHSQN8Ztr+iDuGMtB23OCOu3UQseAF0DXwsNAoTEs0NA==
 
-"@tailwindcssinjs/tailwindcss-data@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/tailwindcss-data/-/tailwindcss-data-0.8.0.tgz#0b402edbc13e0a5333a3edaf67a5c75bf12f6717"
-  integrity sha512-Hyf+MTvkQwjWBRII0dIulYQ6fMcwgd3jj3XYsBXl8rzM8g/nGS4kbG83DL2/3sUAG3CQG7DVH1xLWhzMpWksMQ==
-  dependencies:
-    postcss "^7.0.32"
-
-"@tailwindcssinjs/transformers@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/transformers/-/transformers-0.8.0.tgz#ffecbeed3fb7af0da1aef18282c9b37754e7b6cf"
-  integrity sha512-tzz0Z1V5xLLsvIq0niEfM4dXpheqnYw9SBbB+XsIFUoHGXsaGGEyrH006EnaqsrOT6EdAwaOtmH8biwFBHwcEQ==
+"@tailwindcssinjs/tailwindcss-data@0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcssinjs/tailwindcss-data/-/tailwindcss-data-0.9.1.tgz#20b9d80edd3d65afafe5325d1fb90e73d8a9c1f4"
+  integrity sha512-Nysx4XNEgJVXiiuXTBl6IazjAjo1ID1yJGxif511HG0Vn8fsHsemVpswrpI01WQZPizRyEjZU64W2fCtx6t1/A==
   dependencies:
     css-what "^3.3.0"
     lodash "^4.17.20"
-    postcss "^7.0.32"
-    postcss-js "^2.0.3"
+    postcss "7.0.32"
+    postcss-js "2.0.3"
+    sort-css-media-queries "^1.5.0"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -128,9 +122,9 @@ camelcase-css@^2.0.1:
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
 caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001111:
-  version "1.0.30001114"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001114.tgz#2e88119afb332ead5eaa330e332e951b1c4bfea9"
-  integrity sha512-ml/zTsfNBM+T1+mjglWRPgVsu2L76GAaADKX5f4t0pbhttEp0WMawJsHDYlFkVZkoA+89uvBRrVrEE4oqenzXQ==
+  version "1.0.30001119"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001119.tgz#99185d04bc00e76a86c9ff731dc5ec8e53aefca1"
+  integrity sha512-Hpwa4obv7EGP+TjkCh/wVvbtNJewxmtg4yVJBLFnxo35vbPapBr138bUWENkb5j5L9JZJ9RXLn4OrXRG/cecPQ==
 
 chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
@@ -234,9 +228,9 @@ detective@^5.2.0:
     minimist "^1.1.1"
 
 electron-to-chromium@^1.3.523:
-  version "1.3.533"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.533.tgz#d7e5ca4d57e9bc99af87efbe13e7be5dde729b0f"
-  integrity sha512-YqAL+NXOzjBnpY+dcOKDlZybJDCOzgsq4koW3fvyty/ldTmsb4QazZpOWmVvZ2m0t5jbBf7L0lIGU3BUipwG+A==
+  version "1.3.555"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.555.tgz#a096716ff77cf8da9a608eb628fd6927869503d2"
+  integrity sha512-/55x3nF2feXFZ5tdGUOr00TxnUjUgdxhrn+eCJ1FAcoAt+cKQTjQkUC5XF4frMWE1R5sjHk+JueuBalimfe5Pg==
 
 escalade@^3.0.2:
   version "3.0.2"
@@ -332,7 +326,7 @@ lodash.toarray@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
   integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
 
-lodash@^4.17.15, lodash@^4.17.20:
+lodash@^4.17.20:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -381,6 +375,11 @@ object-assign@^4.1.1:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
+object-hash@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.0.3.tgz#d12db044e03cd2ca3d77c0570d87225b02e1e6ea"
+  integrity sha512-JPKn0GMu+Fa3zt3Bmr66JhokJU5BaNBIh4ZeTlaCBzrBsOeXzwcKKAK1tbLiPKgvwmPXsDvvLHoWh5Bm7ofIYg==
+
 once@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -415,7 +414,7 @@ postcss-functions@^3.0.0:
     postcss "^6.0.9"
     postcss-value-parser "^3.3.0"
 
-postcss-js@^2.0.0, postcss-js@^2.0.3:
+postcss-js@2.0.3, postcss-js@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/postcss-js/-/postcss-js-2.0.3.tgz#a96f0f23ff3d08cec7dc5b11bf11c5f8077cdab9"
   integrity sha512-zS59pAk3deu6dVHyrGqmC3oDXBdNdajk4k1RyxeVXCrcEDBUBHoIhE4QTsmhxgzXxsaqFDAkUZfmMa5f/N/79w==
@@ -510,6 +509,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+sort-css-media-queries@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/sort-css-media-queries/-/sort-css-media-queries-1.5.0.tgz#8f605ad372caad0b81be010311882c046e738093"
+  integrity sha512-QofNE7CEVH1AKdhS7L9IPbV9UtyQYNXyw++8lC+xG6iOLlpzsmncZRiKbihTAESvZ8wOhwnPoesHbMrehrQyyw==
+
 source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
@@ -530,16 +534,16 @@ supports-color@^6.1.0:
     has-flag "^3.0.0"
 
 supports-color@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.1.0.tgz#68e32591df73e25ad1c4b49108a2ec507962bfd1"
-  integrity sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
+  integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.7.0.tgz#923d746847c52e120c7c193488c16d12c519a0aa"
-  integrity sha512-MA9GaF+8KVim1B7TeT4GRD6cbopYQ/IdAyzisRO3dauANbzJ/h/0Z1w+MWpi2NjsF/CvGRfmiRRVSAKeDSfbng==
+tailwindcss@^1.7.6:
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.7.6.tgz#77f294428e399fb570f4bebde2e9bef98456de8a"
+  integrity sha512-focAhU3ciM1/UYBHQVKKzede4zC3y9+IHzU2N/ZF6mbZbhY8S96lOxrO2Y6LMU08+Dbh2xBLmO1bsioLk3Egig==
   dependencies:
     "@fullhuman/postcss-purgecss" "^2.1.2"
     autoprefixer "^9.4.5"
@@ -549,9 +553,10 @@ tailwindcss@^1.7.0:
     color "^3.1.2"
     detective "^5.2.0"
     fs-extra "^8.0.0"
-    lodash "^4.17.15"
+    lodash "^4.17.20"
     node-emoji "^1.8.1"
     normalize.css "^8.0.1"
+    object-hash "^2.0.3"
     postcss "^7.0.11"
     postcss-functions "^3.0.0"
     postcss-js "^2.0.0"
@@ -562,14 +567,13 @@ tailwindcss@^1.7.0:
     reduce-css-calc "^2.1.6"
     resolve "^1.14.2"
 
-typescript-tailwindcssinjs-plugin@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/typescript-tailwindcssinjs-plugin/-/typescript-tailwindcssinjs-plugin-0.2.4.tgz#2d25808b104fb19711b975b4ed47dbaebb7ca6d8"
-  integrity sha512-zmHi2mKJpHzOX2eR5F+EhH4RPtmHZWz3B2kD5dyL42LujvSk1mpDcxiepTkDW+gihuP4YHX74VvsYYfMI3JUAw==
+typescript-tailwindcssinjs-plugin@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/typescript-tailwindcssinjs-plugin/-/typescript-tailwindcssinjs-plugin-0.3.1.tgz#1cd0c25deac3831b75e102a492416df2266e0f3d"
+  integrity sha512-ExlrNKXJVVgmJ4Symf+1mmtbMSNkcZqs3ECUMSPZ0A/rfdtj8TxzVpQJ+UIMce7SYJ/pNLxD1m990Xqz9PrWPQ==
   dependencies:
-    "@tailwindcssinjs/class-composer" "^0.8.0"
-    "@tailwindcssinjs/tailwindcss-data" "0.8.0"
-    "@tailwindcssinjs/transformers" "0.8.0"
+    "@tailwindcssinjs/class-composer" "^0.9.0"
+    "@tailwindcssinjs/tailwindcss-data" "0.9.1"
     import-fresh "^3.2.1"
     typescript-template-language-service-decorator "^2.2.0"
     vscode-languageserver-types "^3.15.1"
