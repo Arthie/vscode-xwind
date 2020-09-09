@@ -1,6 +1,6 @@
 {
   "name": "vscode-tailwindcssinjs",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "publisher": "Arthie",
   "engines": {
     "vscode": "^1.44.0"
@@ -37,6 +37,24 @@
   },
   "main": "./lib/extension",
   "contributes": {
+    "configuration": {
+      "title": "Tailwindcssinjs",
+      "properties": {
+        "tailwindcssinjs.useCompletionItemProviderTriggerProxy": {
+          "type": "boolean",
+          "default": true,
+          "description": "use Trigger character completion proxy."
+        },
+        "tailwindcssinjs.ignoreErrors": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "If this string regex matches the error will be ignored"
+        }
+      }
+    },
     "typescriptServerPlugins": [
       {
         "name": "typescript-tailwindcssinjs-plugin",
@@ -52,9 +70,9 @@
   ],
   "qna": "https://github.com/Arthie/vscode-tailwindcssinjs/issues",
   "dependencies": {
-    "tailwindcss": "^1.7.6",
+    "tailwindcss": "^1.8.5",
     "typescript": "^4.0.2",
-    "typescript-tailwindcssinjs-plugin": "^0.3.1"
+    "typescript-tailwindcssinjs-plugin": "^0.3.2"
   },
   "devDependencies": {
     "@types/vscode": "1.44.0"

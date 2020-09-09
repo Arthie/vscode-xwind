@@ -283,6 +283,11 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
+html-tags@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
+  integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
+
 import-fresh@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.2.1.tgz#633ff618506e793af5ac91bf48b72677e15cbe66"
@@ -540,10 +545,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@^1.7.6:
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.7.6.tgz#77f294428e399fb570f4bebde2e9bef98456de8a"
-  integrity sha512-focAhU3ciM1/UYBHQVKKzede4zC3y9+IHzU2N/ZF6mbZbhY8S96lOxrO2Y6LMU08+Dbh2xBLmO1bsioLk3Egig==
+tailwindcss@^1.8.5:
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.8.5.tgz#3b4624530b5fd71688fd04d16d8bd8c8d56834de"
+  integrity sha512-W4kLvs0iADgn83AOtI35pi24OGgxCfKls9H8qfdwbDTyO2ec7zBPgfEqu2mzaMdE3MWhtbCpyeCDY5rjmCHjTw==
   dependencies:
     "@fullhuman/postcss-purgecss" "^2.1.2"
     autoprefixer "^9.4.5"
@@ -553,6 +558,7 @@ tailwindcss@^1.7.6:
     color "^3.1.2"
     detective "^5.2.0"
     fs-extra "^8.0.0"
+    html-tags "^3.1.0"
     lodash "^4.17.20"
     node-emoji "^1.8.1"
     normalize.css "^8.0.1"
@@ -567,16 +573,16 @@ tailwindcss@^1.7.6:
     reduce-css-calc "^2.1.6"
     resolve "^1.14.2"
 
-typescript-tailwindcssinjs-plugin@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/typescript-tailwindcssinjs-plugin/-/typescript-tailwindcssinjs-plugin-0.3.1.tgz#1cd0c25deac3831b75e102a492416df2266e0f3d"
-  integrity sha512-ExlrNKXJVVgmJ4Symf+1mmtbMSNkcZqs3ECUMSPZ0A/rfdtj8TxzVpQJ+UIMce7SYJ/pNLxD1m990Xqz9PrWPQ==
+typescript-tailwindcssinjs-plugin@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/typescript-tailwindcssinjs-plugin/-/typescript-tailwindcssinjs-plugin-0.3.2.tgz#417321c8778aa2982d63345b2e772cd764dd9980"
+  integrity sha512-HPz2WueTKuTqFSdpm+zj7ahDe+5c55+uVe4mt3Tl2QINEhVMpGinED4u08zPyJ/NZWgI3PyX7hlgu+ZmRyTHUw==
   dependencies:
     "@tailwindcssinjs/class-composer" "^0.9.0"
     "@tailwindcssinjs/tailwindcss-data" "0.9.1"
     import-fresh "^3.2.1"
     typescript-template-language-service-decorator "^2.2.0"
-    vscode-languageserver-types "^3.15.1"
+    vscode-languageserver-types "3.16.0-next.3"
 
 typescript-template-language-service-decorator@^2.2.0:
   version "2.2.0"
@@ -598,10 +604,10 @@ universalify@^0.1.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
-vscode-languageserver-types@^3.15.1:
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.15.1.tgz#17be71d78d2f6236d414f0001ce1ef4d23e6b6de"
-  integrity sha512-+a9MPUQrNGRrGU630OGbYVQ+11iOIovjCkqxajPa9w57Sd5ruK8WQNsslzpa0x/QJqC8kRc2DUxWjIFwoNm4ZQ==
+vscode-languageserver-types@3.16.0-next.3:
+  version "3.16.0-next.3"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.16.0-next.3.tgz#28bc8539bf647ae82597943e0b345a05f3ec807f"
+  integrity sha512-s/z5ZqSe7VpoXJ6JQcvwRiPPA3nG0nAcJ/HH03zoU6QaFfnkcgPK+HshC3WKPPnC2G08xA0iRB6h7kmyBB5Adg==
 
 wrappy@1:
   version "1.0.2"

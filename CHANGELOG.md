@@ -1,4 +1,25 @@
 # Release Notes
+## 0.1.7
+Compatible with tailwindcss 1.8.x  
+Added configuration:  
+```json
+"tailwindcssinjs.useCompletionItemProviderTriggerProxy": {
+  "type": "boolean",
+  "default": true,
+  "description": "use Trigger character completion proxy."
+},
+"tailwindcssinjs.ignoreErrors": {
+  "type": [
+    "string",
+    "null"
+  ],
+  "default": null,
+  "description": "If this string regex matches the error will be ignored"
+}
+```
+
+## 0.1.6
+revert enter trigger
 
 ## 0.1.5
 Fix [#2](https://github.com/Arthie/vscode-tailwindcssinjs/issues/2): removed `` ` `` as trigger character

@@ -20,6 +20,8 @@ const SELECTORS = [
 const disposables: vscode.Disposable[] = [];
 
 export async function activate(context: vscode.ExtensionContext) {
+  const configuration = vscode.workspace.getConfiguration('tailwindcssinjs')
+  const ignoreErrors = configuration.get("ignoreErrors")
   const typescriptLanguageFeaturesExtension = vscode.extensions.getExtension(
     TYPESCRIPT_EXTENSION_ID
   );
@@ -43,43 +45,39 @@ export async function activate(context: vscode.ExtensionContext) {
 
   typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
     config: tailwindConfigfiles[0]?.path,
-    configs: tailwindConfigfiles,
+    ignoreErrors
   });
 
   const configWatcher = vscode.workspace.createFileSystemWatcher(
     "**/tailwind.config.js"
   );
 
-  configWatcher.onDidChange((e: vscode.Uri) => {
-    console.log("Config changed", e.path);
-    typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
-      config: e.path,
-    });
-  });
-  configWatcher.onDidCreate((e: vscode.Uri) => {
-    console.log("Config created", e.path);
-    typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
-      config: e.path,
-    });
-  });
-  configWatcher.onDidDelete((e: vscode.Uri) => {
-    console.log("Config deleted", e.path);
-    typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
-      config: undefined,
-    });
-  });
+  const configWatcherCallback = (action: string) => {
+    return (e: vscode.Uri) => {
+      console.log(`Config ${action}`, e.path);
+      typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
+        config: e.path,
+        ignoreErrors
+      });
+    };
+  }
+
+  configWatcher.onDidChange(configWatcherCallback("changed"))
+  configWatcher.onDidCreate(configWatcherCallback("created"));
+  configWatcher.onDidDelete(configWatcherCallback("deleted"));
 
   //TODO: get tailwind config separator
-  disposables.push(
-    vscode.languages.registerCompletionItemProvider(
-      SELECTORS,
-      tailwindcssinjsCompletionProvider,
-      " ",
-      "[",
-      ":",
-      "\n"
-    )
-  );
+  if (configuration.get("useCompletionItemProviderTriggerProxy")) {
+    disposables.push(
+      vscode.languages.registerCompletionItemProvider(
+        SELECTORS,
+        tailwindcssinjsCompletionProvider,
+        " ",
+        "[",
+        ":"
+      )
+    );
+  }
 }
 
 export function deactivate(): Thenable<void> | void | undefined {
