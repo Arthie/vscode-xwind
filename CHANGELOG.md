@@ -14,7 +14,7 @@ Added configuration:
     "null"
   ],
   "default": null,
-  "description": "If this string regex matches the error will be ignored"
+  "description": "If this regex pattern string matches the error will be ignored"
 }
 ```
 
