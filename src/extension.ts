@@ -22,6 +22,7 @@ const disposables: vscode.Disposable[] = [];
 export async function activate(context: vscode.ExtensionContext) {
   const configuration = vscode.workspace.getConfiguration('tailwindcssinjs')
   const ignoreErrors = configuration.get("ignoreErrors")
+  const templateStringKeyword = configuration.get("templateStringKeyword") as string
   const typescriptLanguageFeaturesExtension = vscode.extensions.getExtension(
     TYPESCRIPT_EXTENSION_ID
   );
@@ -45,6 +46,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
   typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
     config: tailwindConfigfiles[0]?.path,
+    templateStringKeyword,
     ignoreErrors
   });
 
@@ -57,6 +59,7 @@ export async function activate(context: vscode.ExtensionContext) {
       console.log(`Config ${action}`, e.path);
       typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
         config: e.path,
+        templateStringKeyword,
         ignoreErrors
       });
     };
@@ -68,6 +71,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
   //TODO: get tailwind config separator
   if (configuration.get("useCompletionItemProviderTriggerProxy")) {
+    const tailwindcssinjsCompletionProvider = getTailwindcssinjsCompletionProvider(templateStringKeyword)
     disposables.push(
       vscode.languages.registerCompletionItemProvider(
         SELECTORS,
@@ -86,7 +90,7 @@ export function deactivate(): Thenable<void> | void | undefined {
   }
 }
 
-const tailwindcssinjsCompletionProvider = {
+const getTailwindcssinjsCompletionProvider = (templateStringKeyword:string): any => ({
   async provideCompletionItems(
     document: vscode.TextDocument,
     position: vscode.Position,
@@ -97,7 +101,8 @@ const tailwindcssinjsCompletionProvider = {
     //check if triggered by trigger character
     if (context.triggerKind === 1) {
       //get tailwindcssinjs template tags in file
-      const tags = getTailwindcssinjsTagsFromDocument(document);
+      const tt = templateStringKeyword;
+      const tags = getTailwindcssinjsTagsFromDocument(document, templateStringKeyword);
       //get tag if current position is inside a tailwindcssinjs tag
       const tag = getTailwindcssinjsTagFromPosition(position, tags);
 
@@ -110,4 +115,4 @@ const tailwindcssinjsCompletionProvider = {
       }
     }
   },
-};
+});

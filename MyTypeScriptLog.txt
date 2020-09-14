@@ -1,0 +1,6 @@
+Info 0    [18:48:52.178] Starting TS Server
+Info 1    [18:48:52.178] Version: 4.0.2
+Info 2    [18:48:52.178] Arguments: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer) /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js --serverMode partialSemantic --useInferredProjectPerProjectRoot --disableAutomaticTypingAcquisition --cancellationPipeName /var/folders/m3/8ypx7nx508dg_2bbtz3z4pmr0000gn/T/vscode-typescript501/33858811ecd0859e7fd5/tscancellation-49038ceb7704af38b68e.tmp* --globalPlugins typescript-vscode-sh-plugin,typescript-lit-html-plugin,typescript-tailwindcssinjs-plugin --pluginProbeLocations /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/typescript-language-features,/Users/williamcastandet/.vscode/extensions/bierner.lit-html-1.11.1,/Users/williamcastandet/Documents/vscode-tailwindcssinjs --locale en --noGetErrOnBackgroundUpdate --validateDefaultNpmLocation
+Info 3    [18:48:52.178] Platform: darwin NodeVersion: 12 CaseSensitive: false
+Info 4    [18:48:52.178] ServerMode: 1 syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [18:48:52.184] Exiting...

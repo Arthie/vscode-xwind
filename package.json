@@ -45,6 +45,11 @@
           "default": true,
           "description": "use Trigger character completion proxy."
         },
+        "tailwindcssinjs.templateStringKeyword": {
+          "type": "string",
+          "default": "tw",
+          "description": "define the keyword to trigger the suggestion."
+        },
         "tailwindcssinjs.ignoreErrors": {
           "type": [
             "string",

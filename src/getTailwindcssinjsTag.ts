@@ -10,14 +10,16 @@ export interface Tags {
 }
 
 export function getTailwindcssinjsTagsFromDocument(
-  textDocument: vscode.TextDocument
+  textDocument: vscode.TextDocument,
+  templateStringKeyword: string
 ): Tags[] {
   const text = textDocument.getText();
-  const patternTag = /(tw`)([^`]*)+`/g;
+  const strPatternTag = `(${templateStringKeyword}\`)([^\`]*)+\``
+  const patternTag = new RegExp(strPatternTag, 'g');
   const tags: Tags[] = [];
   let tag: RegExpExecArray | null;
   while ((tag = patternTag.exec(text))) {
-    const index = tag.index + "tw`".length;
+    const index = tag.index + `${templateStringKeyword}\``.length;
     const tagx = {
       text: tag[2],
       index,
