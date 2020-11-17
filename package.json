@@ -1,14 +1,14 @@
 {
-  "name": "vscode-tailwindcssinjs",
-  "version": "0.1.7",
+  "name": "vscode-xwind",
+  "version": "0.1.0",
   "publisher": "Arthie",
   "engines": {
     "vscode": "^1.44.0"
   },
   "author": "Arthie",
   "license": "MIT",
-  "displayName": "Tailwindcssinjs",
-  "description": "Vscode extension for @tailwindcssinjs/macro",
+  "displayName": "xwind",
+  "description": "VS Code extension for xwind",
   "categories": [
     "Programming Languages",
     "Other"
@@ -25,27 +25,28 @@
     "emotion",
     "babel",
     "autocomplete",
-    "intellisense"
+    "intellisense",
+    "xwind"
   ],
   "preview": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Arthie/vscode-tailwindcssinjs"
+    "url": "https://github.com/Arthie/vscode-xwind"
   },
   "bugs": {
-    "url": "https://github.com/Arthie/vscode-tailwindcssinjs/issues"
+    "url": "https://github.com/Arthie/vscode-xwind/issues"
   },
   "main": "./lib/extension",
   "contributes": {
     "configuration": {
-      "title": "Tailwindcssinjs",
+      "title": "xwind",
       "properties": {
-        "tailwindcssinjs.useCompletionItemProviderTriggerProxy": {
+        "xwind.useCompletionItemProviderTriggerProxy": {
           "type": "boolean",
           "default": true,
           "description": "use Trigger character completion proxy."
         },
-        "tailwindcssinjs.ignoreErrors": {
+        "xwind.ignoreErrors": {
           "type": [
             "string",
             "null"
@@ -57,7 +58,7 @@
     },
     "typescriptServerPlugins": [
       {
-        "name": "typescript-tailwindcssinjs-plugin",
+        "name": "typescript-xwind-plugin",
         "enableForWorkspaceTypeScriptVersions": true
       }
     ]
@@ -70,9 +71,9 @@
   ],
   "qna": "https://github.com/Arthie/vscode-tailwindcssinjs/issues",
   "dependencies": {
-    "tailwindcss": "^1.8.5",
-    "typescript": "^4.0.2",
-    "typescript-tailwindcssinjs-plugin": "^0.3.2"
+    "tailwindcss": "2.0.0-alpha.25-compat",
+    "typescript": "^4.0.5",
+    "typescript-xwind-plugin": "0.2.1"
   },
   "devDependencies": {
     "@types/vscode": "1.44.0"

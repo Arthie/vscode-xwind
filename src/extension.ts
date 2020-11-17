@@ -1,11 +1,11 @@
 import * as vscode from "vscode";
 import {
-  getTailwindcssinjsTagsFromDocument,
-  getTailwindcssinjsTagFromPosition,
-} from "./getTailwindcssinjsTag";
+  getXwindTagsFromDocument,
+  getXwindTagFromPosition,
+} from "./getXwindTag";
 
 const TYPESCRIPT_EXTENSION_ID = "vscode.typescript-language-features";
-const PLUGIN_ID = "typescript-tailwindcssinjs-plugin";
+const PLUGIN_ID = "typescript-xwind-plugin";
 const SELECTORS = [
   { language: "javascript", scheme: "file" },
   { language: "javascript", scheme: "untitled" },
@@ -20,8 +20,8 @@ const SELECTORS = [
 const disposables: vscode.Disposable[] = [];
 
 export async function activate(context: vscode.ExtensionContext) {
-  const configuration = vscode.workspace.getConfiguration('tailwindcssinjs')
-  const ignoreErrors = configuration.get("ignoreErrors")
+  const configuration = vscode.workspace.getConfiguration("xwind");
+  const ignoreErrors = configuration.get("ignoreErrors");
   const typescriptLanguageFeaturesExtension = vscode.extensions.getExtension(
     TYPESCRIPT_EXTENSION_ID
   );
@@ -45,7 +45,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
   typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
     config: tailwindConfigfiles[0]?.path,
-    ignoreErrors
+    ignoreErrors,
   });
 
   const configWatcher = vscode.workspace.createFileSystemWatcher(
@@ -57,12 +57,12 @@ export async function activate(context: vscode.ExtensionContext) {
       console.log(`Config ${action}`, e.path);
       typescriptLanguageServerPluginApi.configurePlugin(PLUGIN_ID, {
         config: e.path,
-        ignoreErrors
+        ignoreErrors,
       });
     };
-  }
+  };
 
-  configWatcher.onDidChange(configWatcherCallback("changed"))
+  configWatcher.onDidChange(configWatcherCallback("changed"));
   configWatcher.onDidCreate(configWatcherCallback("created"));
   configWatcher.onDidDelete(configWatcherCallback("deleted"));
 
@@ -96,10 +96,10 @@ const tailwindcssinjsCompletionProvider = {
   ): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList> {
     //check if triggered by trigger character
     if (context.triggerKind === 1) {
-      //get tailwindcssinjs template tags in file
-      const tags = getTailwindcssinjsTagsFromDocument(document);
-      //get tag if current position is inside a tailwindcssinjs tag
-      const tag = getTailwindcssinjsTagFromPosition(position, tags);
+      //get xwind template tags in file
+      const tags = getXwindTagsFromDocument(document);
+      //get tag if current position is inside a xwind tag
+      const tag = getXwindTagFromPosition(position, tags);
 
       //if position is inside tag execute completion item provider and return results
       if (tag) {
