@@ -1,6 +1,6 @@
 {
   "name": "vscode-xwind",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "Arthie",
   "engines": {
     "vscode": "^1.44.0"
@@ -71,9 +71,10 @@
   ],
   "qna": "https://github.com/Arthie/vscode-tailwindcssinjs/issues",
   "dependencies": {
-    "tailwindcss": "2.0.0-alpha.25-compat",
-    "typescript": "^4.0.5",
-    "typescript-xwind-plugin": "0.2.1"
+    "postcss": "^8.1.10",
+    "tailwindcss": "2.0.1",
+    "typescript": "^4.1.2",
+    "typescript-xwind-plugin": "0.7.0"
   },
   "devDependencies": {
     "@types/vscode": "1.44.0"
