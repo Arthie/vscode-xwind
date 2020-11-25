@@ -4,7 +4,7 @@
 
 # vscode-xwind
 
-Adds editor support for [xwind](https://github.com/Arthie/xwind/tree/master/packages/macro) tagged template syntax: tw\`...\` or xw\`...\`
+Adds editor support for [xwind](https://github.com/Arthie/xwind/tree/master/packages/xwind) tagged template syntax: tw\`...\` or xw\`...\`
 
 This extension extends VS Code's typescript language service with [typescript-xwind-plugin](https://github.com/Arthie/xwind/tree/master/packages/typescript-plugin).
 Make sure you're using VS Code's typescript version for the extension to work!
